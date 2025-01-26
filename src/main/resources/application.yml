@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: credit-engine
+  datasource:
+    url: jdbc:h2:mem:bd
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+open-weather:
+  appId: f5081dcfa39a64a7e9ef63ae9c5ed304
+  url: https://api.openweathermap.org/data/2.5

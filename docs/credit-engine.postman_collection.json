@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "11a05547-8904-4182-a87b-d1bbf1fb0f52",
+		"name": "credit-engine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4453679"
+	},
+	"item": [
+		{
+			"name": "Post credit analysis",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Julio\",\r\n    \"documentNumber\": \"45081431800\",\r\n    \"age\": 30,\r\n    \"income\": 2000,\r\n    \"city\": \"Campinas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit-analysis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit-analysis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get credit analysis by documentNumber",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/credit-analysis/45081431800",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit-analysis",
+						"45081431800"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
